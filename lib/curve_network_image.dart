@@ -1,11 +1,12 @@
-
 import 'package:flutter/material.dart';
 
+///
+/// CurveNetworkImage StatelessWidget Widget..
 class CurveNetworkImage extends StatelessWidget {
-  CurveNetworkImage({super.key, this.sizeOfImage , this.url ,this.curveValue});
-  double? sizeOfImage;
-  String? url;
-  double? curveValue;
+  const CurveNetworkImage({super.key, this.sizeOfImage , this.url ,this.curveValue});
+  final double? sizeOfImage;
+  final String? url;
+  final double? curveValue;
 
   @override
   Widget build(BuildContext context) {

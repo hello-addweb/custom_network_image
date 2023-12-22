@@ -1,9 +1,9 @@
-
-
 import 'package:flutter/material.dart';
 
+///
+/// CurveNetworkBorderImage StatelessWidget Widget..
 class CurveNetworkBorderImage extends StatelessWidget {
-  CurveNetworkBorderImage({super.key,
+  const CurveNetworkBorderImage({super.key,
     this.borderColor,
     this.sizeFromRadius ,
     this.url,
@@ -11,11 +11,11 @@ class CurveNetworkBorderImage extends StatelessWidget {
     this.radius,
   });
 
-  Color? borderColor;
-  double? sizeFromRadius;
-  String? url;
-  double? padding;
-  double? radius;
+  final Color? borderColor;
+  final double? sizeFromRadius;
+  final String? url;
+  final double? padding;
+  final double? radius;
 
   @override
   Widget build(BuildContext context) {

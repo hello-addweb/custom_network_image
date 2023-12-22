@@ -1,18 +1,18 @@
-
-
 import 'package:flutter/material.dart';
 
+///
+/// CircularImageWithBorder StatelessWidget Widget..
 class CircularImageWithBorder extends StatelessWidget {
-   CircularImageWithBorder({super.key,
+  const  CircularImageWithBorder({super.key,
      this.borderColor,
      this.sizeFromRadius ,
      this.url,
      this.padding});
 
-  Color? borderColor;
-  double? sizeFromRadius;
-  String? url;
-  double? padding;
+  final Color? borderColor;
+  final double? sizeFromRadius;
+  final String? url;
+  final double? padding;
   @override
   Widget build(BuildContext context) {
     return Container(

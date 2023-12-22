@@ -1,11 +1,11 @@
-
-
 import 'package:flutter/material.dart';
 
+///
+/// CircularNetworkImage StatelessWidget Widget..
 class CircularNetworkImage extends StatelessWidget {
-   CircularNetworkImage({super.key, this.sizeOfImage , this.url });
-  double? sizeOfImage;
-  String? url;
+  const CircularNetworkImage({super.key, this.sizeOfImage , this.url });
+  final double? sizeOfImage;
+  final String? url;
 
   @override
   Widget build(BuildContext context) {
