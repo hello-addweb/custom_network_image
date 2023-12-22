@@ -13,8 +13,9 @@ import 'curve_network_border_image.dart';
 ///
 /// CustomNetworkImage main class..
 class CustomNetworkImage extends StatelessWidget {
-  const CustomNetworkImage({super.key,
-     this.sizeOfImage ,
+  const CustomNetworkImage({
+    super.key,
+    this.sizeOfImage,
     required this.url,
     this.curveValue,
     this.borderColor,
@@ -22,9 +23,9 @@ class CustomNetworkImage extends StatelessWidget {
     this.borderThickness,
     this.radius,
     this.isCircular = false,
-    this.isCircularBorder= false,
-    this.isCurve= false,
-    this.isCurveBorder= false,
+    this.isCircularBorder = false,
+    this.isCurve = false,
+    this.isCurveBorder = false,
   });
 
   final double? sizeOfImage;
@@ -39,24 +40,31 @@ class CustomNetworkImage extends StatelessWidget {
   final bool? isCurve;
   final bool? isCurveBorder;
 
-
   @override
   Widget build(BuildContext context) {
-    return
-      isCircular == true ?
-    CircularNetworkImage(sizeOfImage: sizeOfImage, url: url,)
-          : isCurve== true ?
-    CurveNetworkImage(sizeOfImage: sizeOfImage, url: url,curveValue: curveValue,)
-          : isCircularBorder== true ?
-    CircularImageWithBorder(borderColor: borderColor, sizeFromRadius: sizeFromRadius, url:url , padding: borderThickness)
-          : CurveNetworkBorderImage(
-        borderColor: borderColor,
-        sizeFromRadius: sizeFromRadius ,
-        url:url,
-        padding: borderThickness,
-        radius:  radius,
-      );
+    return isCircular == true
+        ? CircularNetworkImage(
+            sizeOfImage: sizeOfImage,
+            url: url,
+          )
+        : isCurve == true
+            ? CurveNetworkImage(
+                sizeOfImage: sizeOfImage,
+                url: url,
+                curveValue: curveValue,
+              )
+            : isCircularBorder == true
+                ? CircularImageWithBorder(
+                    borderColor: borderColor,
+                    sizeFromRadius: sizeFromRadius,
+                    url: url,
+                    padding: borderThickness)
+                : CurveNetworkBorderImage(
+                    borderColor: borderColor,
+                    sizeFromRadius: sizeFromRadius,
+                    url: url,
+                    padding: borderThickness,
+                    radius: radius,
+                  );
   }
 }
-
-

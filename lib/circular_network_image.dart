@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 ///
 /// CircularNetworkImage StatelessWidget Widget..
 class CircularNetworkImage extends StatelessWidget {
-  const CircularNetworkImage({super.key, this.sizeOfImage , this.url });
+  const CircularNetworkImage({super.key, this.sizeOfImage, this.url});
   final double? sizeOfImage;
   final String? url;
 
@@ -16,7 +16,8 @@ class CircularNetworkImage extends StatelessWidget {
       child: CircleAvatar(
         radius: sizeOfImage,
         backgroundColor: Colors.transparent,
-        backgroundImage: NetworkImage(url ?? 'https://picsum.photos/250?image=9'),
+        backgroundImage:
+            NetworkImage(url ?? 'https://picsum.photos/250?image=9'),
       ),
     );
   }
