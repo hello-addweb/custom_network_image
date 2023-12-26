@@ -32,17 +32,17 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Custom Network Image"),
+        title: const Text("Custom Network Image"),
       ),
-      body: Center(
+      body: const Center(
         child: Column(children: [
-          const SizedBox(height: 10,),
+          SizedBox(height: 10,),
           CustomNetworkImage(sizeOfImage: 65, url: 'https://picsum.photos/250?image=9', isCircular: true,),
-          const SizedBox(height: 10,),
+          SizedBox(height: 10,),
           CustomNetworkImage(curveValue: 10 ,sizeOfImage:  45, url: 'https://picsum.photos/250?image=9', isCurve: true,),
-          const SizedBox(height: 10,),
+          SizedBox(height: 10,),
           CustomNetworkImage(borderColor : Colors.purple , radius : 20 ,url :'https://picsum.photos/250?image=9' ,sizeFromRadius:  48,borderThickness:   3 , isCurveBorder : true),
-          const SizedBox(height: 10,),
+          SizedBox(height: 10,),
           CustomNetworkImage(borderColor : Colors.purple , radius : 20 ,url :'https://picsum.photos/250?image=9' ,sizeFromRadius:  48,borderThickness:   3 , isCircularBorder : true),
 
         ],),
